@@ -74,6 +74,7 @@ statemachine class SUOL_Manager {
     }
 
     text_field.SetMemberFlashString("htmlText", oneliner.text);
+    text_field.SetMemberFlashNumber("y", -text_field.GetMemberFlashNumber("textHeight"));
   }
 
   /// Expects a value in the [0;1] range.
